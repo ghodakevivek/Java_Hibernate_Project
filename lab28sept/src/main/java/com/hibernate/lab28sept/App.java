@@ -1,5 +1,5 @@
 
-//create a hibernate project showing one to one relation ship between product and customer(uni-directional)
+//create a hibernate project showing one to one relation ship between product and customer(Bi-directional)
 
 
 package com.hibernate.lab28sept;
@@ -34,6 +34,7 @@ public class App
         p1.setPcolor("Blue");
         
         c1.setProd(p1);
+        p1.setCust(c1);
         
         //Opening the session
         Session session=factory.openSession(); 
